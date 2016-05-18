@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>웹D 김가현의 Workarea</title>
+<script src="lib/jquery-1.12.0.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="lib/masonry.pkgd.min.js"></script>
+<script type="text/javascript">
+    var container=document.querySelector('#container')
+    var msnry=new Masonry(container,{
+        columnWidth:200,
+        itemSelector:'.grid-item'
+    })
+</script>
+
+</head>
+<body>
+<header>
+    <h2>상단고정메뉴입니다.</h2>
+    <span id="top_line"></span>
+    <div id="header_wrap">
+        <span id="top_logo">
+            <img src="image/logo.png" alt="logo">
+        </span>
+        <ul id="top_icon">
+            <li><a href="index.html"><img src="image/top_icon1.gif" alt="home"></a></li>
+            <li><a href="#"><img src="image/top_icon2.gif" alt="blog"></a></li>
+            <li><a href="#"><img src="image/top_icon3.gif" alt="facebook"></a></li>
+            <li><a href="#"><img src="image/top_icon4.gif" alt="email"></a></li>
+        </ul>
+        <nav>
+            <ul id="main_menu">
+                <li><a href="#">WEB SITE</a></li>
+                <li><a href="#">MOBILE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <hr/>
+</header>
+<section>
+    <h2>홈페이지 소개본문입니다.</h2>
+    <div id="main_slide">
+        <ul id="slide_img">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <span class="slide_btn"><img id="left_btn" src="image/left_btn.gif" alt="left button"></span>
+        <span class="slide_btn"><img id="right_btn" src="image/right_btn.gif" alt="right button"></span>
+        <ul id="slide_dot">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <span id="main_title"><img src="image/main_title.gif" alt="main title"></span>
+    <span id="tag">
+        <img src="image/tag.gif" alt="tag">
+    </span>
+    <div id="tag_text">
+        <span>
+            #웹디자인 #퍼블리싱 #반응형웹 #크로스브라우징 #모바일웹앱
+        </span>
+    </div>
+    <div class="grid">
+        <div class="grid-item">web site</div>
+        <div class="grid-item">web site2</div>
+        <div class="grid-item">web site3</div>
+        <div class="grid-item">web site4</div>
+    </div>
+</section>   
+<footer>
+    <span id="footer_text">
+        나날이 발전해가고자 노력하는 웹디자이너 김가현입니다.<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010-5595-5753 katie89gh@naver.com
+    </span>
+</footer> 
+</body>
+</html>
